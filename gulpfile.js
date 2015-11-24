@@ -29,7 +29,8 @@
       function () {
         gulp.src([
           'LICENSE',
-          'README.md'
+          'README.md',
+          '.gitignore'
         ])
         .pipe(gulp.dest('dist'))
         .on('end', cb);
