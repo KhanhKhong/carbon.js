@@ -62,7 +62,7 @@
 
   // Commit to dist branch
   gulp.task('dist', function () {
-    $.buildBranch({ folder: 'dist', branch: 'dist', commit: true });
+    $.buildBranch({ folder: 'dist', branch: 'dist', commit:  'Gulp build %curtimestamp%' });
   });
   // Lint JavaScript
   gulp.task('lint', function() {
