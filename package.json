@@ -1,25 +1,48 @@
 {
-  "private": true,
+  "name": "carbon.js",
+  "private": false,
+  "version": "0.0.1",
+  "description": "A Lightweight library for hierarchically composable JavaScript Elements.",
+  "main": "carbon.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/arodic/carbon.js.git"
+  },
+  "keywords": [
+    "carbon",
+    "elements",
+    "javascript",
+    "library"
+  ],
+  "author": "Aki Rodic",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/arodic/carbon.js/issues"
+  },
+  "homepage": "https://github.com/arodic/carbon.js#readme",
   "devDependencies": {
     "browser-sync": "^2.7.7",
+    "crisper": ">= 2.0.0",
     "del": "^1.1.1",
     "gulp": "^3.8.5",
-    "gulp-rename": "^1.2.0",
-    "gulp-size": "^1.0.0",
-    "gulp-minify-inline": "^0.1.1",
-    "run-sequence": "^1.0.2",
+    "gulp-crisper": ">= 1.0.0",
+    "gulp-gh-pages": "^0.5.4",
+    "gulp-html-extract": "^0.0.3",
     "gulp-if": "^1.2.5",
     "gulp-jscs": "^3.0.0",
     "gulp-jscs-stylish": "^1.1.2",
-    "gulp-html-extract": "^0.0.3",
-    "gulp-load-plugins": "^0.10.0",
     "gulp-jshint": "^1.6.3",
+    "gulp-load-plugins": "^0.10.0",
+    "gulp-minify-inline": "^0.1.1",
+    "gulp-rename": "^1.2.0",
+    "gulp-size": "^1.0.0",
     "gulp-vulcanize": "^6.0.0",
     "jshint-stylish": "^2.0.0",
-    "vulcanize": ">= 1.4.2",
-    "crisper": ">= 2.0.0",
-    "gulp-crisper": ">= 1.0.0",
-    "gulp-build-branch": "^0.1.4"
+    "run-sequence": "^1.0.2",
+    "vulcanize": ">= 1.4.2"
   },
   "engines": {
     "node": ">=0.10.0"

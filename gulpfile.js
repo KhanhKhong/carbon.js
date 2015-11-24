@@ -25,17 +25,7 @@
     gulp.src(['src/carbon.html'])
     .pipe($.rename('carbon.vulcanized.html'))
     .pipe(gulp.dest('src'))
-    .on('end',
-      function () {
-        gulp.src([
-          'LICENSE',
-          'README.md',
-          '.gitignore'
-        ])
-        .pipe(gulp.dest('dist'))
-        .on('end', cb);
-      }
-    );
+    .on('end', cb);
   });
 
   // Vulcanize granular configuration
@@ -48,7 +38,7 @@
         inlineScripts: true
       }))
       .on('error', function(e) {
-        console.log(e)
+        console.log(e);
       })
       .pipe($.rename('carbon.html'))
       .pipe($.minifyInline())
@@ -62,7 +52,15 @@
 
   // Commit to dist branch
   gulp.task('dist', function () {
-    $.buildBranch({ folder: 'dist', branch: 'dist', commit:  'Gulp build %curtimestamp%' });
+    return gulp.src([
+      'dist/**/*',
+      'README.md',
+      'LICENSE',
+      '.bowerrc',
+      'bower.json',
+      'package.json'
+    ])
+    .pipe($.ghPages({ branch: 'dist' }));
   });
   // Lint JavaScript
   gulp.task('lint', function() {
@@ -103,7 +101,6 @@
       'copy',
       'vulcanize',
       'clean-vulcanized',
-      'dist',
       cb
     );
   });
