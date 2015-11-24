@@ -13,13 +13,9 @@ The core ideas in this library originate from attempts to build complex applicat
 
 ### Core Concepts ###
 
-The core concept of this library is embodied in [Carbon.Element](https://github.com/arodic/carbon.js/blob/dev/src/element.js) class. It is essentially a JavaScript object with data binding, event system, and type checking for its properties. Additionally, if `uuid` property is set, the objects have the ability to persist property values between browsing sessions. Data binding can be expressed both imperatively and declaratively. Events propagate through complex element hierarchies the same way they propagate in DOM.
+The core concept of this library is embodied in [Carbon.Element](https://github.com/arodic/carbon.js/blob/dev/src/element.js) class. It creates a JavaScript object with data binding, event system, and type checking for its properties. Additionally, if `uuid` property is set, the objects have the ability to persist property values between browsing sessions. Data binding can be expressed both imperatively and declaratively. Events propagate through complex element hierarchies the same way they propagate in DOM.
 
 ### Usage ###
-
-Carbon.js provides a simple way to create hierarchically composable JavaScript Elements with features such as
-data binding (declarative and imperative), events and type checking.
-It is inspired by Polymer.js and intended to be used with Polymer elements.
 
 ##### Basic Example #####
 
