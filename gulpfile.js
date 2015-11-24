@@ -25,7 +25,16 @@
     gulp.src(['src/carbon.html'])
     .pipe($.rename('carbon.vulcanized.html'))
     .pipe(gulp.dest('src'))
-    .on('end', cb);
+    .on('end',
+      function () {
+        gulp.src([
+          'LICENSE',
+          'README.md'
+        ])
+        .pipe(gulp.dest('dist'))
+        .on('end', cb);
+      }
+    );
   });
 
   // Vulcanize granular configuration
