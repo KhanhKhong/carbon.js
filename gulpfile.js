@@ -60,7 +60,7 @@
       'bower.json',
       'package.json'
     ])
-    .pipe($.ghPages({ branch: 'dist' }));
+    .pipe($.ghPages({ branch: 'dist', force: true }));
   });
   // Lint JavaScript
   gulp.task('lint', function() {
