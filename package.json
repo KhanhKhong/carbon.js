@@ -18,12 +18,10 @@
     "jshint-stylish": "^2.0.0",
     "vulcanize": ">= 1.4.2",
     "crisper": ">= 2.0.0",
-    "gulp-crisper": ">= 1.0.0"
+    "gulp-crisper": ">= 1.0.0",
+    "gulp-build-branch": "^0.1.4"
   },
   "engines": {
     "node": ">=0.10.0"
-  },
-  "dependencies": {
-    "gulp-build-branch": "^0.1.4"
   }
 }
