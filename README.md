@@ -39,7 +39,7 @@ Carbon.MyElement = function(config) {
 Carbon.create(Carbon.MyElement);
 ```
 
-Then you can create instances and assign values in the constructor.
+Then, you can create instances and assign values in the constructor.
 
 
 ```javascript
