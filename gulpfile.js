@@ -50,6 +50,10 @@
       .pipe($.size({title: 'vulcanize'}));
   });
 
+  // Commit to dist branch
+  gulp.task('dist', function () {
+    $.buildBranch({ folder: 'dist', branch: 'dist', commit: true });
+  });
   // Lint JavaScript
   gulp.task('lint', function() {
     return gulp.src([
@@ -89,6 +93,7 @@
       'copy',
       'vulcanize',
       'clean-vulcanized',
+      'dist',
       cb
     );
   });
