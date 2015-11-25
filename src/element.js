@@ -271,13 +271,11 @@
 
   };
 
-  Carbon.Element.prototype._uuidChanged = function(event) {
+  Carbon.Element.prototype._uuidChanged = function() {
 
-    if (event.oldValue) {
-      for (var i in this._properties) {
-        if (this._properties[i].persist) {
-          this[i] = this._properties[i].getPersistedValue();
-        }
+    for (var i in this._properties) {
+      if (this._properties[i].persist) {
+        this[i] = this._properties[i].getPersistedValue();
       }
     }
 
