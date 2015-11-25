@@ -1,4 +1,17 @@
 {
   "name": "carbon.js",
-  "private": false
+  "version": "0.0.2",
+  "homepage": "https://github.com/arodic/carbon.js",
+  "authors": [
+    "Aki Rodic <aleksandar.xyz@gmail.com>"
+  ],
+  "description": "A Lightweight library for hierarchically composable JavaScript Elements",
+  "main": "carbon.js",
+  "keywords": [
+    "carbon.js", "elements", "javascript"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*"
+  ]
 }
